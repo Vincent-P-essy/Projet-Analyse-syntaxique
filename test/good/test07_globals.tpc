@@ -1,0 +1,24 @@
+/* Test: variables globales */
+int global_x, global_y;
+char global_char;
+
+struct Data {
+    int value;
+};
+
+int getValue(void){
+    return global_x;
+}
+
+void setValue(int v){
+    global_x = v;
+    return;
+}
+
+int main(void){
+    global_x = 42;
+    global_y = 100;
+    global_char = 'A';
+    setValue(global_x + global_y);
+    return getValue();
+}

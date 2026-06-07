@@ -1,0 +1,4 @@
+/* Test basique: fonction main simple */
+int main(void){
+    return 0;
+}

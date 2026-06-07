@@ -1,0 +1,23 @@
+/* Test: déclarations de fonctions */
+int add(int a, int b){
+    int result;
+    result = a + b;
+    return result;
+}
+
+int multiply(int x, int y){
+    return x * y;
+}
+
+void printValue(int val){
+    return;
+}
+
+int main(void){
+    int x, y, sum;
+    x = 5;
+    y = 10;
+    sum = add(x, y);
+    printValue(sum);
+    return multiply(x, y);
+}

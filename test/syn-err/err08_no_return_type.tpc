@@ -1,0 +1,4 @@
+/* Erreur: fonction sans type de retour */
+main(void){
+    return 0;
+}

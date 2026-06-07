@@ -1,0 +1,11 @@
+/* Test: déclarations de variables et affectations */
+int main(void){
+    int a, b, c;
+    char x, y;
+    a = 1;
+    b = 2;
+    c = a + b;
+    x = 'a';
+    y = 'z';
+    return c;
+}

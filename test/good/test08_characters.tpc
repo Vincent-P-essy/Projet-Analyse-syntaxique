@@ -1,0 +1,10 @@
+/* Test: caractères et échappements */
+int main(void){
+    char a, b, c, d, e;
+    a = 'a';
+    b = 'Z';
+    c = '0';
+    d = ' ';
+    e = '\n';
+    return 0;
+}

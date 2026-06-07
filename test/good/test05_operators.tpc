@@ -1,0 +1,51 @@
+/* Test: opérateurs arithmétiques et logiques */
+int main(void){
+    int a, b, c, d;
+    a = 10;
+    b = 5;
+
+    c = a + b;
+    c = a - b;
+    c = a * b;
+    c = a / b;
+    c = a % b;
+
+    if (a > b) {
+        c = 1;
+    }
+
+    if (a >= b) {
+        c = 1;
+    }
+
+    if (a < b) {
+        c = 0;
+    }
+
+    if (a <= b) {
+        c = 0;
+    }
+
+    if (a == b) {
+        c = 0;
+    }
+
+    if (a != b) {
+        c = 1;
+    }
+
+    d = 1;
+    if (c && d) {
+        c = 1;
+    }
+
+    if (c || d) {
+        c = 1;
+    }
+
+    if (!c) {
+        c = 0;
+    }
+
+    return c;
+}

@@ -1,0 +1,4 @@
+/* Erreur: type invalide */
+string main(void){
+    return 0;
+}

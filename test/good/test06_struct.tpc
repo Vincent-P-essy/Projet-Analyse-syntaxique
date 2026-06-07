@@ -1,0 +1,17 @@
+/* Test: structures */
+struct Point {
+    int x;
+    int y;
+};
+
+struct Rectangle {
+    int width;
+    int height;
+    char type;
+};
+
+int main(void){
+    struct Point p1, p2;
+    struct Rectangle rect;
+    return 0;
+}

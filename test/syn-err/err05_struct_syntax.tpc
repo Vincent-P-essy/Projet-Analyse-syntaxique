@@ -1,0 +1,9 @@
+/* Erreur: syntaxe de structure incorrecte */
+struct Point
+    int x;
+    int y;
+};
+
+int main(void){
+    return 0;
+}

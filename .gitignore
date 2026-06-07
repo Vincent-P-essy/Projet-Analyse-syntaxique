@@ -1,0 +1,8 @@
+src/lex.yy.c
+src/tpcas.tab.c
+src/tpcas.tab.h
+obj/*.o
+bin/tpcas
+*.tar.gz
+._*
+.DS_Store
