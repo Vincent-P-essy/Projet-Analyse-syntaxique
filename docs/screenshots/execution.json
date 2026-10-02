@@ -1,0 +1,7 @@
+[
+  {
+    "command": "bash test.sh",
+    "exit": 0,
+    "output": "======================================\n   Tests du compilateur TPC\n======================================\n\nCompilateur: ./bin/tpcas\n\n=== Tests sur programmes corrects ===\nTest: test01_hello.tpc                   ✓ PASS\nTest: test02_variables.tpc               ✓ PASS\nTest: test03_functions.tpc               ✓ PASS\nTest: test04_control.tpc                 ✓ PASS\nTest: test05_operators.tpc               ✓ PASS\nTest: test06_struct.tpc                  ✓ PASS\nTest: test07_globals.tpc                 ✓ PASS\nTest: test08_characters.tpc              ✓ PASS\n\n=== Tests sur programmes avec erreurs ===\nTest: err01_missing_semicolon.tpc        ✓ PASS (erreur détectée)\nTest: err02_missing_brace.tpc            ✓ PASS (erreur détectée)\nTest: err03_missing_paren.tpc            ✓ PASS (erreur détectée)\nTest: err04_invalid_type.tpc             ✓ PASS (erreur détectée)\nTest: err05_struct_syntax.tpc            ✓ PASS (erreur détectée)\nTest: err06_if_syntax.tpc                ✓ PASS (erreur détectée)\nTest: err07_while_syntax.tpc             ✓ PASS (erreur détectée)\nTest: err08_no_return_type.tpc           ✓ PASS (erreur détectée)\n\n======================================\n   Résultats des tests\n======================================\nTotal:   16 tests\nRéussis: 16\nÉchoués: 0\nScore:   100%\n\n✓ Tous les tests sont passés avec succès!\n\n"
+  }
+]
