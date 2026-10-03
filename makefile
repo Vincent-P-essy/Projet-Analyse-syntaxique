@@ -11,7 +11,7 @@ OBJ=obj/
 
 all: $(BIN)$(EXEC)
 
-$(BIN)$(EXEC): $(OBJ)tree.o $(OBJ)tpcas.tab.o $(OBJ)lex.yy.o
+$(BIN)$(EXEC): $(OBJ)tree.o $(OBJ)tpcas.tab.o $(OBJ)lex.yy.o | $(BIN)
 	$(CC) -o $@ $^ $(LDFLAGS)
 
 $(SRC)tpcas.tab.c $(SRC)tpcas.tab.h: $(SRC)tpcas.y
@@ -20,10 +20,10 @@ $(SRC)tpcas.tab.c $(SRC)tpcas.tab.h: $(SRC)tpcas.y
 $(SRC)lex.yy.c: $(SRC)tpcas.lex $(SRC)tpcas.tab.h
 	flex -o $@ $<
 
-$(OBJ)tree.o: $(SRC)tree.c $(SRC)tree.h
+$(OBJ)tree.o: $(SRC)tree.c $(SRC)tree.h | $(OBJ)
 	$(CC) -o $@ -c $< $(CFLAGS)
 
-$(OBJ)%.o: $(SRC)%.c
+$(OBJ)%.o: $(SRC)%.c | $(OBJ)
 	$(CC) -o $@ -c $< $(CFLAGS)
 
 clean:
@@ -31,3 +31,6 @@ clean:
 
 mrproper: clean
 	rm -f $(BIN)$(EXEC)
+
+$(BIN) $(OBJ):
+	mkdir -p $@

@@ -1,11 +1,5 @@
 # Projet d'Analyse Syntaxique - Langage TPC
 
-## Execution preview
-
-![Projet-Analyse-syntaxique execution](docs/screenshots/execution.png)
-
-Local execution of `bash test.sh`. The input and output shown come from the repository example or test fixtures. [Verification](docs/verification.md).
-
 ## Licence Informatique 2025-2026
 
 ### Auteur
